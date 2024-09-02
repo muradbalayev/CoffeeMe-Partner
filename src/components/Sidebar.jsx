@@ -1,4 +1,4 @@
-import { ChartCandlestick, FolderClosed, History, LogOut, MapPinMinusInside, MessageSquareMore, ShoppingCart,  UserCircle } from "lucide-react"
+import { ChartCandlestick, FolderClosed, History, LogOut, MapPinMinusInside, MessageSquareMore, ShoppingCart,  User2 } from "lucide-react"
 import { NavLink, useNavigate } from "react-router-dom"
 import { FaUser } from "react-icons/fa6";
 
@@ -15,7 +15,7 @@ const Sidebar = () => {
         {
             id: 2,
             title: "Account",
-            icon: <UserCircle size={20} />,
+            icon: <User2 size={20} />,
             path: "/dashboard/account"
         },
         {

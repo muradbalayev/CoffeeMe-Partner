@@ -7,9 +7,8 @@ import { Link } from "react-router-dom";
 const AccountPage = () => {
   return (
     <div className="wrapper">
-      <header className="header items-center">
-        <h1 className="header-title">Account</h1>
-       
+      <header className="header ">
+        <h1 className="header-title">Account</h1> 
       </header>
       <main className="relative flex items-center justify-center h-full w-full overflow-auto">
         <div className="menu lg:w-[600px] md:w-[450px] w-[300px] flex flex-wrap">
@@ -19,7 +18,7 @@ const AccountPage = () => {
               <h1 className="poppins md:text-2xl text-xl cursor-pointer">Menu</h1>
             </div>
           </Link>
-          <Link className="group flex flex-col justify-center items-center lg:w-[300px] md:w-[225px] w-[150px] border border-gray-500 border-t-0 border-r-0">
+          <Link to={"/dashboard/subscribers"} className="group flex flex-col justify-center items-center lg:w-[300px] md:w-[225px] w-[150px] border border-gray-500 border-t-0 border-r-0">
             <div className="group-hover:text-green-800 transition-all duration-300 ease-in-out flex flex-col justify-center items-center">
               <HiMiniUsers size={50} />
               <h1 className="poppins md:text-2xl text-xl cursor-pointer">Subscribers</h1>

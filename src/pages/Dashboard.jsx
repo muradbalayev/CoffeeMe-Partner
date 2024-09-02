@@ -4,6 +4,7 @@ import AccountPage from "./Account/AccountPage"
 import OrderPage from "./Orders/OrderPage"
 import Balance from "../components/Balance"
 import MenuPage from "./Menu/MenuPage"
+import SubscribersPage from "./Subscribers/SubscribersPage"
 
 
 const Dashboard = () => {
@@ -15,6 +16,7 @@ const Dashboard = () => {
         <Route path='/' element={<OrderPage />} />
         <Route path='/account' element={<AccountPage />} />
         <Route path='/menu' element={<MenuPage/>} />
+        <Route path="/subscribers" element={<SubscribersPage />} />
       </Routes>
     </div>
   )

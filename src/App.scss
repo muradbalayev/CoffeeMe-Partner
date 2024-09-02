@@ -10,6 +10,7 @@
 }
 :root {
   --bg-color: #00704a;
+  // --bg-coffee-green: #00704a;
 }
 
 .poppins {
@@ -69,14 +70,12 @@
     border-bottom-right-radius: 0px;
   }
 
-  .link:hover {
-    // background-color: #fff;
-    // color: var(--bg-color);
-    // font-weight: 600;
-    padding-left: 25px;
-
-  
-  }
+  // .link:hover {
+  //   background-color: #fff;
+  //   color: var(--bg-color);
+  //   font-weight: 600;
+  //   padding-left: 25px;
+  // }
 
   .btn {
     width: 100%;
@@ -112,28 +111,92 @@
   flex-direction: column;
   font-family: "Inter", sans-serif;
   padding: 2rem 0.6rem 6rem 0.6rem;
-  overflow: hidden;
+  overflow-y: scroll;
   background-color: white;
 }
 
 header {
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 1rem 0 2rem;
 }
 
 .header-title {
-  font-size: 2rem;
+  font-size: 2.3rem;
+  font-weight: 600;
 }
 
-// Account 
-.menu a{
-padding: 3rem 1.5rem;
+// Account
+.menu a {
+  padding: 3rem 1.5rem;
 }
 
+/* Table header */
+/* Styling the table headers */
+table {
+  width: 100%;
+  min-width: 600px; /* Set a minimum width for the table */
+  border-collapse: collapse;
+}
 
+table th {
+  font-family: Poppins, "sans-serif";
+  font-weight: 300;
+  background-color: var(--bg-color); 
+  color: white;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+table tr{
+  border-bottom: 1px solid rgb(209, 206, 206);
+}
+
+table td {
+  font-family: Poppins, "sans-serif";
+  font-size: 0.8rem;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+table th::after,
+table td::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px; 
+  height: 20px; 
+  background-color: #cbc8c8be; 
+}
+
+/* Remove the border from the last cell and header in each row */
+table th:last-child::after,
+table td:last-child::after {
+  display: none;
+}
+
+/* Add rounded corners to the first and last header */
+table th:first-child {
+  border-top-left-radius: 15px;
+}
+
+table th:last-child {
+  border-top-right-radius: 15px;
+}
+
+.hudJpJ {
+  background-color: var(--bg-color) !important;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-weight: bold !important;
+  font-size: 0.9rem !important;
+}
 
 @media (min-width: 1024) {
   .wrapper {
-    padding: 2rem 2rem 6rem 2rem;
+    padding: 2rem 3rem 6rem 3rem;
   }
-    
 }
