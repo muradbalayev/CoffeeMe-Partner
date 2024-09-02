@@ -3,7 +3,7 @@ import { BiSolidBellRing } from "react-icons/bi";
 import { FaWallet } from "react-icons/fa6";
 const Balance = () => {
   return (
-    <div className="balance absolute top-11 right-10 flex gap-3 ">
+    <div className="balance absolute top-11 right-10 flex gap-3">
           <IoVolumeMedium
             className="border-2 border-black rounded-lg p-2 hover:scale-110 transition duration-300 ease-in-out"
             size={50}

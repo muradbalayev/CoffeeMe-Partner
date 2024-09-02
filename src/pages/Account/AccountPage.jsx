@@ -3,12 +3,14 @@ import { BiSolidBellRing } from "react-icons/bi";
 import { AiFillAppstore } from "react-icons/ai";
 import { HiMiniUsers } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import Balance from "../../components/Balance";
 
 const AccountPage = () => {
   return (
     <div className="wrapper">
       <header className="header ">
         <h1 className="header-title">Account</h1> 
+        <Balance/>
       </header>
       <main className="relative flex items-center justify-center h-full w-full overflow-auto">
         <div className="menu lg:w-[600px] md:w-[450px] w-[300px] flex flex-wrap">

@@ -1,4 +1,5 @@
 import { Search } from "lucide-react";
+import Balance from "../../components/Balance";
 
 
 const MenuPage = () => {
@@ -35,6 +36,7 @@ const MenuPage = () => {
         <div className="wrapper">
             <header className="header flex flex-col gap-4">
                 <h1 className="header-title">Menu</h1>
+                <Balance/>
                 <div className="relative flex items-center mt-4">
                     <Search className="absolute top-1/2 transform -translate-y-1/2 left-4" size={20} color="gray" />
                     <input
@@ -43,7 +45,7 @@ const MenuPage = () => {
                 </div>
             </header>
             <main className="mt-4 px-4 overflow-auto">
-                <table >
+                <table className="min-w-[700px]">
                     <thead>
                         <tr>
                             <th>Image</th>

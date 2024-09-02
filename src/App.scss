@@ -112,7 +112,9 @@
   font-family: "Inter", sans-serif;
   padding: 2rem 0.6rem 6rem 0.6rem;
   overflow-y: scroll;
+  overflow-x: hidden;
   background-color: white;
+  position: relative;
 }
 
 header {
@@ -133,7 +135,6 @@ header {
 /* Styling the table headers */
 table {
   width: 100%;
-  min-width: 600px; /* Set a minimum width for the table */
   border-collapse: collapse;
 }
 
