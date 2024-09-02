@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import LoginPage from "../pages/Login/LoginPage"
 import Dashboard from "../pages/Dashboard"
 
-const Router = () => {
+const RouterApp = () => {
   return (
  <BrowserRouter>
  <Routes>
@@ -13,4 +13,4 @@ const Router = () => {
   )
 }
 
-export default Router
+export default RouterApp

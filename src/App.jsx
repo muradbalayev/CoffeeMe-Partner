@@ -1,11 +1,11 @@
 import './App.scss'
-import Router from './Router/Router'
+import RouterApp from './router/RouterApp'
 
 function App() {
 
   return (
     <div className="w-full h-screen relative">
-     <Router />
+     <RouterApp />
     </div>
   )
 }
