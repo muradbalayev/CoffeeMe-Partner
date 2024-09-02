@@ -78,8 +78,6 @@
   
   }
 
-  
-
   .btn {
     width: 100%;
     display: flex;
@@ -126,12 +124,16 @@ header {
   font-size: 2rem;
 }
 
+// Account 
+.menu a{
+padding: 3rem 1.5rem;
+}
 
 
 
-
-@media (min-width: 768px) {
+@media (min-width: 1024) {
   .wrapper {
     padding: 2rem 2rem 6rem 2rem;
   }
+    
 }

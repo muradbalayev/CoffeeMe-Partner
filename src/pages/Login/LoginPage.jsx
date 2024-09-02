@@ -22,12 +22,12 @@ const LoginPage = () => {
     return (
         <div className='relative w-full h-full flex justify-center items-center'>
             <div style={{ backgroundImage: `url(${loginbg})` }}
-                className='container__left w-1/2 h-full flex justify-center items-center border-r border-black'>
+                className='md:flex hidden container__left w-1/2 h-full  justify-center items-center border-r border-black'>
                 <img src={logo} className='object-fit' alt="logo" />
             </div>
 
             <div
-                className='container__right w-1/2 flex justify-center items-center flex-col'>
+                className='container__right md:w-1/2 w-full flex justify-center items-center flex-col'>
                 <h1 className="poppins text-black text-2xl font-semibold">LOGIN</h1>
 
                 <form className=" flex flex-col items-center"

@@ -63,7 +63,7 @@ const Sidebar = () => {
                 <h3 className="poppins text-sm">Coffee Shop Name</h3>
             </div>
             <div className="divider w-12 mx-auto bg-gray-300 h-[1px]"></div>
-            <nav className="links overflow-auto mb-6">
+            <nav className="links overflow-auto mb-4">
                 {SIDEBARITEMS.map((item) => (                 
                     <NavLink className='link text-sm' key={item.id} to={item.path} end>
                         {item.icon}
