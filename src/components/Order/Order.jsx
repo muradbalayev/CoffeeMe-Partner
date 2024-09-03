@@ -35,7 +35,7 @@ const Order = ({ order }) => {
 
 
     return (
-        <div className="order-container pb-8 w-full px-8">
+        <div className="order-container pb-4 w-full">
             <div className={`order cursor-pointer ${isOpen ? "rounded-t-3xl bg-gray-300" : "rounded-3xl"}`} onClick={toggleDropdown}>
                 <div className="order-number py-4 border-r border-gray-300 w-1/3">
                     <h1 className="poppins font-medium text-3xl">

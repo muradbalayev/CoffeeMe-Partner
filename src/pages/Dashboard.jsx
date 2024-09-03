@@ -5,6 +5,8 @@ import OrderPage from "./Orders/OrderPage"
 import MenuPage from "./Menu/MenuPage"
 import SubscribersPage from "./Subscribers/SubscribersPage"
 import SalesReportPage from "./SalesReport/SalesReportPage"
+import NotificationPage from "./Notification/NotificationPage"
+import WalletPage from "./Wallet/WalletPage"
 
 
 const Dashboard = () => {
@@ -21,6 +23,10 @@ const Dashboard = () => {
         <Route path="/subscribers" element={<SubscribersPage />} />
 
         <Route path='/sales-report' element={<SalesReportPage />} />
+
+        <Route path="/wallet" element={<WalletPage />} />
+
+        <Route path="/notifications" element={<NotificationPage />} />
       </Routes>
     </div>
   )

@@ -26,13 +26,13 @@ const AccountPage = () => {
               <h1 className="poppins md:text-2xl text-xl cursor-pointer">Subscribers</h1>
             </div>
           </Link>
-          <Link className="group flex flex-col justify-center items-center lg:w-[300px] md:w-[225px] w-[150px] border border-gray-500 border-l-0 border-b-0">
+          <Link to={"/dashboard/wallet"} className="group flex flex-col justify-center items-center lg:w-[300px] md:w-[225px] w-[150px] border border-gray-500 border-l-0 border-b-0">
             <div className="group-hover:text-green-800 transition-all duration-300 ease-in-out flex flex-col justify-center items-center">
               <FaWallet size={50} />
               <h1 className="poppins md:text-2xl text-xl cursor-pointer">Wallet</h1>
             </div>
           </Link>
-          <Link className="group flex flex-col justify-center items-center lg:w-[300px] md:w-[225px] w-[150px] border border-gray-500 border-b-0 border-r-0">
+          <Link to={"/dashboard/notifications"} className="group flex flex-col justify-center items-center lg:w-[300px] md:w-[225px] w-[150px] border border-gray-500 border-b-0 border-r-0">
             <div className="group-hover:text-green-800 transition-all duration-300 ease-in-out flex flex-col justify-center items-center">
               <BiSolidBellRing size={50} />
               <h1 className="poppins md:text-2xl text-xl cursor-pointer">Notification</h1>

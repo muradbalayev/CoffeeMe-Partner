@@ -8,7 +8,7 @@ function SalesReportPage() {
   return (
     <div className="wrapper">
       <header className="header">
-          <h1 className="header-title md:text-4xl text-2xl">
+          <h1 className="header-title">
             Sales Report
           </h1>
           <Balance/>

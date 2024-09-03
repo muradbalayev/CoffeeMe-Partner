@@ -122,10 +122,19 @@ header {
   padding: 1rem 1rem 0 2rem;
 }
 
+section{
+  // padding: 1rem 1rem 0 2rem;
+  font-family: Poppins, 'sans-serif';
+}
+
+main{
+  padding: 0rem 2rem 0 2rem;
+}
+
 .header-title {
   font-family: Poppins, "sans-serif";
-  font-size: 2.3rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 // Account
@@ -224,11 +233,13 @@ table th:last-child {
   font-family: Poppins, "sans-serif";
   display: flex;
   position: relative;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   background-color: var(--card-bg);
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 
   .order-details__left {
     display: flex;
@@ -282,6 +293,26 @@ table th:last-child {
 
 .button {
   cursor: pointer;
+}
+
+.send-notification{
+
+  select, input, textarea{
+    background-color: #efefef;
+  }
+
+  button{
+    background-color: var(--bg-color);
+  }
+  
+}
+
+// Wallet page
+.wallet{
+
+  button{
+    background-color: var(--bg-color);
+  }
 }
 
 @media (min-width: 1024) {
