@@ -4,51 +4,45 @@ const WalletPage = () => {
     const data = [
         {
             id: 1,
-            title: "John Doe",
-            category: 25,
-            message: "Male",
+            name: "John Doe",
+            price: "25",
             date: "12.04.2024",
             status: "Pending"
 
         },
         {
             id: 2,
-            title: "Jane Doe",
-            category: 30,
-            message: "Female",
+            name: "Jane Doe",
+            price: "18",
             date: "12.04.2024",
             status: "Pending"
 
         },
         {
             id: 3,
-            title: "Bob Smith",
-            category: 35,
-            message: "Male",
+            name: "Bob Smith",
+            price: "25",
             date: "12.04.2024",
             status: "Pending"
         },
         {
             id: 3,
-            title: "Bob Smith",
-            category: 35,
-            message: "Male",
+            name: "Bob Smith",
+            price: "20",
             date: "12.04.2024",
             status: "Pending"
         },
         {
             id: 4,
-            title: "Bob Smith",
-            category: 35,
-            message: "Male",
+            name: "Bob Smith",
+            price: "30",
             date: "12.04.2024",
             status: "Pending"
         },
         {
             id: 5,
-            title: "Bob Smith",
-            category: 35,
-            message: "Male",
+            name: "Bob Smith",
+            price: "40",
             date: "12.04.2024",
             status: "Pending"
         }
@@ -65,7 +59,7 @@ const WalletPage = () => {
                     <div className='debet-card bg-gradient-to-r from-[#e7c783] to-[#E4C770] rounded-xl max-w-[350px] max-h-[220px] relative' >
                         <div className='overlay'>
                             <svg width="400" height="230" viewBox="0 0 166 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path style={{ mixBlendMode: 'screen' }} fillRule="evenodd" clipRule="evenodd"  opacity="0.35" d="M57.89 230H0.380005L107.62 0.0400391H165.14L57.89 230Z" fill="url(#paint0_linear_1_11240)" />
+                                <path style={{ mixBlendMode: 'screen' }} fillRule="evenodd" clipRule="evenodd" opacity="0.35" d="M57.89 230H0.380005L107.62 0.0400391H165.14L57.89 230Z" fill="url(#paint0_linear_1_11240)" />
                                 <defs>
                                     <linearGradient id="paint0_linear_1_11240" x1="82.76" y1="230" x2="82.76" y2="0.0500445" gradientUnits="userSpaceOnUse">
                                         <stop stopColor="white" stopOpacity="0" />
@@ -81,37 +75,37 @@ const WalletPage = () => {
                         </div>
                     </div>
                     <div>
-                    <button className='poppins px-8 py-4 rounded-xl text-white text-sm'>Withdraw</button>
+                        <button className='poppins px-8 py-4 rounded-xl text-white text-sm'>Withdraw</button>
                     </div>
                 </div>
                 <section className="notifications mt-3">
-            <h1 className="text-3xl mt-6">Recent notifications</h1>
-            <div className="mt-8 overflow-auto">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Category</th>
-                            <th>Message</th>
-                            <th>Date</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {data.map((item) => (
-                            <tr key={item.id}>
-                                <td>{item.title}</td>
-                                <td>{item.category}</td>
-                                <td>{item.message}</td>
-                                <td>{item.date}</td>
-                                <td>{item.status}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
+                    <h1 className="text-3xl mt-6">Recent transactions</h1>
+                    <main className="mt-8 overflow-auto">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {data.map((item) => (
+                                    <tr key={item.id}>
+                                        <td>{item.id}</td>
+                                        <td>{item.name}</td>
+                                        <td>{item.price}</td>
+                                        <td>{item.date}</td>
+                                        <td>{item.status}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </main>
 
-            </section>
+                </section>
             </main>
         </div>
     )

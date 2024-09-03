@@ -94,7 +94,7 @@ const NotificationPage = () => {
                     </div>
                 </form>
             </section>
-            <section className="notifications mt-3">
+            <main className="notifications mt-3">
             <h1 className="text-3xl mt-2">Recent notifications</h1>
             <main className="mt-8 px-4 overflow-auto">
                 <table className="min-w-[700px]">
@@ -121,7 +121,7 @@ const NotificationPage = () => {
                 </table>
             </main>
 
-            </section>
+            </main>
 
         </div>
     )
