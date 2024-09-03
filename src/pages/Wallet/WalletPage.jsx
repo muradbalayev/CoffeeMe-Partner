@@ -86,7 +86,7 @@ const WalletPage = () => {
                 </div>
                 <section className="notifications mt-3">
             <h1 className="text-3xl mt-6">Recent notifications</h1>
-            <main className="mt-8 overflow-auto">
+            <div className="mt-8 overflow-auto">
                 <table>
                     <thead>
                         <tr>
@@ -109,7 +109,7 @@ const WalletPage = () => {
                         ))}
                     </tbody>
                 </table>
-            </main>
+            </div>
 
             </section>
             </main>
