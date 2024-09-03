@@ -205,7 +205,7 @@ table th:last-child {
   display: flex;
   align-items: center;
   padding: 10px 25px 10px 30px;
-  border-radius: 20px;
+  transition: .2s ease-in-out;
 
   h1 {
     cursor: pointer;
@@ -263,10 +263,19 @@ table th:last-child {
       font-weight: 500;
     }
 
-    .button-cancel{
+    .button-cancel {
       font-weight: 500;
       border: 1px solid rgb(168, 166, 166);
       border-radius: 10px;
+    }
+  }
+
+  .order-time {
+    button {
+      transition: 0.3s ease;
+    }
+    button:hover {
+      background-color: rgb(227, 176, 80);
     }
   }
 }
@@ -280,6 +289,3 @@ table th:last-child {
     padding: 2rem 3rem 6rem 3rem;
   }
 }
-
-
-

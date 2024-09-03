@@ -4,26 +4,65 @@ import Order from "../../components/Order/Order";
 const OrderPage = () => {
 
 
-  const order = {
-    orderId: 1,
-    customerName: "Emin Baghirov",
-    customerId: "12830904",
-    number: "1",
-    coffee: "Americano",
-    type: 'Take away',
-    size: "M",
-    price: "8.00",
-    comment: 'Bol buzlu olsun ',
-    age: '22',
-    visitCount: '2',
-    lastOrder: 'Cappuccino',
-    lastOrderTime: '2022-02-22',
-    lastOrderRating: '3',
-    totalRating: '4',
-    timeLeft: "5",
-    totalPrice: "10"
-
-  }
+  const orders = [
+    {
+      orderId: 1,
+      customerName: "Emin Baghirov",
+      customerId: "12830904",
+      number: "1",
+      coffee: "Americano",
+      type: 'Take away',
+      size: "M",
+      price: "8.00",
+      comment: 'Bol buzlu olsun ',
+      age: '22',
+      visitCount: '2',
+      lastOrder: 'Cappuccino',
+      lastOrderTime: '2022-02-22',
+      lastOrderRating: '3',
+      totalRating: '4',
+      timeLeft: "5",
+      totalPrice: "10"
+    },
+    {
+      orderId: 2,
+      customerName: "Ali Aghayev",
+      customerId: "12830904",
+      number: "1",
+      coffee: "Americano",
+      type: 'Take away',
+      size: "M",
+      price: "8.00",
+      comment: 'Bol buzlu olsun ',
+      age: '22',
+      visitCount: '2',
+      lastOrder: 'Cappuccino',
+      lastOrderTime: '2022-02-22',
+      lastOrderRating: '3',
+      totalRating: '4',
+      timeLeft: "5",
+      totalPrice: "10"
+    },
+    {
+      orderId: 3,
+      customerName: "Murad Balayev",
+      customerId: "12830904",
+      number: "1",
+      coffee: "Americano",
+      type: 'Take away',
+      size: "M",
+      price: "8.00",
+      comment: 'Bol buzlu olsun ',
+      age: '22',
+      visitCount: '2',
+      lastOrder: 'Cappuccino',
+      lastOrderTime: '2022-02-22',
+      lastOrderRating: '3',
+      totalRating: '4',
+      timeLeft: "5",
+      totalPrice: "10"
+    },
+  ]
 
   return (
     <div className="wrapper">
@@ -31,8 +70,10 @@ const OrderPage = () => {
         <h1 className="header-title">Orders</h1>
         <Balance />
       </header>
-      <main className="mt-2">
-        <Order order={order} />
+      <main className="mt-10">
+        {orders.map((order) => (
+          <Order key={order.orderId} order={order} />
+        ))}
       </main>
     </div>)
 }

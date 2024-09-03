@@ -48,14 +48,7 @@ const OrderDetailsLeft = ({order}) => {
         </h4>
       </div>
     </div>
-    <div className="actions py-5 lg:px-10 px-5 mt-4 flex lg:flex-row flex-col">
-      <button className="button-accept lg:text-lg text-base lg:py-3 lg:px-8 py-2 px-6">
-        Accept
-      </button>
-      <button className="button-cancel lg:text-lg text-base lg:py-3 lg:px-8 py-2 px-6">
-        Cancel
-      </button>
-    </div>
+   
   </div>
   )
 }

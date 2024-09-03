@@ -61,16 +61,7 @@ const OrderDetailsRight = ({order}) => {
       </div>
     </div>
     <div className="divider mt-5 w-20 border-t border-gray-300"></div>
-    <div className="order-footer mt-auto mb-4 flex lg:flex-row flex-col gap-3 justify-around items-center w-full">
-      <div className="order-price flex gap-1">
-        <p className="text-lg leading-4">Total</p>
-        <h4 className="text-3xl">{order.price} AZN</h4>
-      </div>
-      <div className="order-time w-16 h-16 border-4 rounded-full flex flex-col justify-center items-center border-green-800">
-        <h4 className="font-medium text-2xl">{order.timeLeft}</h4>
-        <p className="text-xs">min</p>
-      </div>
-    </div>
+   
   </div>
   )
 }
