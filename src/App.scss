@@ -10,6 +10,7 @@
 }
 :root {
   --bg-color: #00704a;
+  --card-bg: #efefef;
   // --bg-coffee-green: #00704a;
 }
 
@@ -110,7 +111,7 @@
   display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
-  padding: 2rem 0.6rem 6rem 0.6rem;
+  padding: 2rem 0.6rem 0rem 0.6rem;
   overflow-y: scroll;
   overflow-x: hidden;
   background-color: white;
@@ -122,6 +123,7 @@ header {
 }
 
 .header-title {
+  font-family: Poppins, "sans-serif";
   font-size: 2.3rem;
   font-weight: 600;
 }
@@ -141,14 +143,14 @@ table {
 table th {
   font-family: Poppins, "sans-serif";
   font-weight: 300;
-  background-color: var(--bg-color); 
+  background-color: var(--bg-color);
   color: white;
   padding: 10px;
   position: relative;
   text-align: center;
 }
 
-table tr{
+table tr {
   border-bottom: 1px solid rgb(209, 206, 206);
 }
 
@@ -167,9 +169,9 @@ table td::after {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  width: 1px; 
-  height: 20px; 
-  background-color: #cbc8c8be; 
+  width: 1px;
+  height: 20px;
+  background-color: #cbc8c8be;
 }
 
 /* Remove the border from the last cell and header in each row */
@@ -196,8 +198,88 @@ table th:last-child {
   font-size: 0.9rem !important;
 }
 
+//Order
+
+.order {
+  background-color: var(--card-bg);
+  display: flex;
+  align-items: center;
+  padding: 10px 25px 10px 30px;
+  border-radius: 20px;
+
+  h1 {
+    cursor: pointer;
+  }
+
+  span {
+    cursor: pointer;
+  }
+
+  h3 {
+    cursor: pointer;
+  }
+}
+
+.order-details {
+  font-family: Poppins, "sans-serif";
+  display: flex;
+  position: relative;
+  margin-top: 1.5rem;
+  background-color: var(--card-bg);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+
+  .order-details__left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    gap: 10px;
+    width: 50%;
+  }
+
+  .order-details__right {
+    display: flex;
+    padding: 0px 0px 0px 40px;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+  }
+
+  .order-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .actions {
+    align-items: center;
+    gap: 20px;
+
+    .button-accept {
+      color: white;
+      border-radius: 10px;
+      background-color: var(--bg-color);
+      font-weight: 500;
+    }
+
+    .button-cancel{
+      font-weight: 500;
+      border: 1px solid rgb(168, 166, 166);
+      border-radius: 10px;
+    }
+  }
+}
+
+.button {
+  cursor: pointer;
+}
+
 @media (min-width: 1024) {
   .wrapper {
     padding: 2rem 3rem 6rem 3rem;
   }
 }
+
+
+
