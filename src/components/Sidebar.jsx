@@ -57,17 +57,17 @@ const Sidebar = ({isOpen}) => {
         navigate('/')
     }
     return (
-        <div className={`sidebar md:min-w-52 min-w-44 relative ${isOpen ? 'hidden' : 'flex'}`}>
+        <div className={`sidebar md:min-w-52 sm:min-w-40 min-w-36 relative ${isOpen ? 'hidden' : 'flex'}`}>
             <div className="w-full flex flex-col gap-3 items-center justify-start">
-                <div className='profile-img flex bg-gray-100 rounded-full transition duration-300 p-5'>
-                    <FaUser color="gray" size={55} />
+                <div className='profile-img flex bg-gray-100 rounded-full transition duration-300 sm:p-5 p-3'>
+                    <FaUser color="gray" size={50} />
                 </div>
-                <h3 className="poppins text-sm">Coffee Shop Name</h3>
+                <h3 className="poppins text-sm text-center">Coffee Shop Name</h3>
             </div>
             <div className="divider w-12 mx-auto bg-gray-300 h-[1px]"></div>
             <nav className="links overflow-auto mb-4">
                 {SIDEBARITEMS.map((item) => (
-                    <NavLink className='link text-sm' key={item.id} to={item.path} end>
+                    <NavLink className='link md:text-sm text-xs' key={item.id} to={item.path} end>
                         {item.icon}
                         <p> {item.title}</p>
                     </NavLink>
