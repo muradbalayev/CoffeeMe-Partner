@@ -121,7 +121,7 @@ const DataPage = () => {
                     <div className="relative flex items-center">
                         <Search className="absolute top-1/2 transform -translate-y-1/2 left-4" size={20} color="gray" />
                         <input
-                            className="md:min-w-60 max-w-36 outline-none text-sm py-3 ps-12 pe-2 border border-gray-400 rounded-3xl" />
+                            className="md:min-w-60 max-w-48 outline-none text-sm py-3 ps-12 pe-2 border border-gray-400 rounded-3xl" />
                     </div>
                     <div className="min-w-[520px] h-12 whitespace-nowrap overflow-x-auto border w-full border-gray-400 rounded-xl flex justify-start items-center">
                         <div className="border-r flex items-center justify-center border-gray-300 h-full p-3">

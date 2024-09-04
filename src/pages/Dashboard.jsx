@@ -31,11 +31,12 @@ const Dashboard = () => {
         color="black"
         onClick={toggleSideBar}
       /> */}
+
       <Menu
         ref={menuButtonRef}
-        className="mobile-nav z-40 sm:hidden block absolute top-5 right-5 cursor-pointer"
-        size={25}
-        color="black"
+        className="mobile-nav bg-gray-400 rounded-xl  p-2 z-40 sm:hidden block absolute top-5 right-5 cursor-pointer"
+        size={40}
+        color="white"
         onClick={() => setIsMobileOpen(!isMobileOpen)}
       />
 
