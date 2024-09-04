@@ -14,11 +14,11 @@ const WithdrawPage = () => {
 
     return (
         <div className="wrapper withdraw pb-8">
-            <header className="header flex flex-col gap-4">
-                <h1 className="header-title">Wallet</h1>
+            <header className="header gap-4">
+                <h1 className="header-title">Withdraw</h1>
                 <Balance />
             </header>
-            <main className='flex flex-col items-center mt-4    '>
+            <main className='flex flex-col items-center md:mt-4 mt-14    '>
                 <div className='debet-card bg-gradient-to-r from-[#e7c783] to-[#E4C770] rounded-xl max-w-[310px] max-h-[200px] relative' >
                     <div className='overlay'>
                         <svg width="400" height="230" viewBox="0 0 166 230" fill="none" xmlns="http://www.w3.org/2000/svg">

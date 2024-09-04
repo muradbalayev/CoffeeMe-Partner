@@ -57,7 +57,7 @@ const WalletPage = () => {
             </header>
             <main className='flex flex-col md:mt-10 mt-12'>
                 <div className='flex md:flex-row flex-col gap-4 items-start'>
-                    <div className='debet-card bg-gradient-to-r from-[#e7c783] to-[#E4C770] rounded-xl md:max-w-[350px] md:max-h-[220px] max-w-[280px] max-h-[170px] relative' >
+                    <div className='debet-card overflow-hidden bg-gradient-to-r from-[#e7c783] to-[#E4C770] rounded-xl md:max-w-[350px] md:max-h-[220px] max-w-[280px] max-h-[170px] relative' >
                         <div className='overlay'>
                             <svg width="350" height="230" viewBox="0 0 166 230" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path style={{ mixBlendMode: 'screen' }} fillRule="evenodd" clipRule="evenodd" opacity="0.35" d="M57.89 230H0.380005L107.62 0.0400391H165.14L57.89 230Z" fill="url(#paint0_linear_1_11240)" />
@@ -75,7 +75,9 @@ const WalletPage = () => {
                             <h3 className='md:text-2xl text-xl text-white'>The Cups</h3>
                         </div>
                     </div>
-                        <Link to={'/dashboard/withdraw'}  className='withdraw-btn link poppins md:px-8 md:py-4 px-6 py-3 rounded-xl text-white text-sm'>Withdraw</Link>
+                    <div className='text-center flex items-center justify-center'>
+                        <Link to={'/dashboard/withdraw'}  className='withdraw-btn poppins md:px-8 md:py-4 px-5 py-3 rounded-xl text-white text-sm'>Withdraw</Link>
+                    </div>
                 </div>
                 <section className="notifications mt-3">
                     <h1 className="text-3xl mt-6">Recent transactions</h1>

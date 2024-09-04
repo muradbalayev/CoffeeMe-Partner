@@ -34,10 +34,10 @@ const MenuPage = () => {
 
     return (
         <div className="wrapper">
-            <header className="header flex flex-col gap-4">
+            <header className="header gap-4">
                 <h1 className="header-title">Menu</h1>
                 <Balance/>
-                <div className="relative flex items-center mt-4">
+                <div className="relative flex items-center mmd:mt-4 mt-12">
                     <Search className="absolute top-1/2 transform -translate-y-1/2 left-4" size={20} color="gray" />
                     <input
                         placeholder="Search for product"
