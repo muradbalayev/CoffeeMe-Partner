@@ -38,14 +38,14 @@ const Order = ({ order }) => {
         <div className="order-container pb-4 w-full">
             <div className={`order cursor-pointer ${isOpen ? "rounded-t-3xl bg-gray-300" : "rounded-3xl"}`} onClick={toggleDropdown}>
                 <div className="order-number py-4 border-r border-gray-300 w-1/3">
-                    <h1 className="poppins font-medium md:text-3xl text-xl">
+                    <h1 className="poppins font-medium md:text-3xl SM:text-xl">
                         Order #{order.orderId}
                     </h1>
                 </div>
                 <div className="w-2/3 md:pl-8 pl-2 flex items-center justify-between">
-                    <div className="customer poppins flex gap-2">
+                    <div className="customer poppins flex sm:flex-row flex-col sm:gap-2">
                         <span className="md:text-base text-sm">Müştəri</span>
-                        <h3 className="md:text-2xl text-lg font-medium">{order.customerName}</h3>
+                        <h3 className="md:text-2xl sm:text-lg font-medium">{order.customerName}</h3>
                     </div>
                     {isOpen ? (
                         <ChevronDown size={30} color="gray" className="button" />

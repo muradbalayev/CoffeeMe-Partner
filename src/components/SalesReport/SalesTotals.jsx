@@ -44,7 +44,7 @@ const SalesTotals = () => {
   return (
     <div className="totals md:mt-8 mt-14 px-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
       {totalData.map((total) => (
-        <Link to={total.path}
+        <Link
           key={total.id}
           className="total-card cursor-pointer hover:shadow-xl shadow-md min-h-48 p-4 rounded-lg min-w-[150px]">
           <div className="flex flex-col h-full justify-between">
