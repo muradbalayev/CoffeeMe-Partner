@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Balance from '../../components/Balance'
 
 const WalletPage = () => {
@@ -55,10 +56,10 @@ const WalletPage = () => {
                 <Balance />
             </header>
             <main className='flex flex-col mt-10'>
-                <div className='flex gap-4'>
+                <div className='flex gap-4 items-start'>
                     <div className='debet-card bg-gradient-to-r from-[#e7c783] to-[#E4C770] rounded-xl max-w-[350px] max-h-[220px] relative' >
                         <div className='overlay'>
-                            <svg width="400" height="230" viewBox="0 0 166 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="350" height="230" viewBox="0 0 166 230" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path style={{ mixBlendMode: 'screen' }} fillRule="evenodd" clipRule="evenodd" opacity="0.35" d="M57.89 230H0.380005L107.62 0.0400391H165.14L57.89 230Z" fill="url(#paint0_linear_1_11240)" />
                                 <defs>
                                     <linearGradient id="paint0_linear_1_11240" x1="82.76" y1="230" x2="82.76" y2="0.0500445" gradientUnits="userSpaceOnUse">
@@ -74,9 +75,7 @@ const WalletPage = () => {
                             <h3 className='text-2xl text-white'>The Cups</h3>
                         </div>
                     </div>
-                    <div>
-                        <button className='poppins px-8 py-4 rounded-xl text-white text-sm'>Withdraw</button>
-                    </div>
+                        <Link to={'/dashboard/withdraw'}  className='link poppins px-8 py-4 rounded-xl text-white text-sm'>Withdraw</Link>
                 </div>
                 <section className="notifications mt-3">
                     <h1 className="text-3xl mt-6">Recent transactions</h1>

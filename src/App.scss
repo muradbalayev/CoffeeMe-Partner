@@ -137,6 +137,10 @@ main{
   font-weight: 400;
 }
 
+.link{
+  cursor: pointer;
+}
+
 // Account
 .menu a {
   padding: 3rem 1.5rem;
@@ -310,8 +314,25 @@ table th:last-child {
 // Wallet page
 .wallet{
 
-  button{
+  a{
     background-color: var(--bg-color);
+  }
+}
+
+.withdraw{
+  button{
+    transition: .3s ease;
+    font-family: Poppins, 'sans-serif';
+    font-weight: 600;
+
+
+    &:hover:not(:last-child){
+      background-color: #E4C770;
+    }
+  }
+  .button-close:hover{
+    background-color: red;
+    color: white;
   }
 }
 
