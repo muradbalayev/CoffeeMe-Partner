@@ -56,11 +56,11 @@ const NotificationPage = () => {
     ]
     return (
         <div className="wrapper pb-8">
-            <header className="header flex flex-col gap-4">
+            <header className="header gap-4">
                 <h1 className="header-title">Notifications</h1>
                 <Balance />
             </header>
-            <section className="send-notification mt-3 px-8">
+            <section className="send-notification md:mt-3 mt-12 md:px-8 px-2">
                 <form className="flex flex-col gap-4">
                     <div className="input-group flex flex-col gap-1">
                         <label className="text-lg">Title</label>
@@ -79,9 +79,6 @@ const NotificationPage = () => {
                                 Subscribed
                             </option>
                         </select>
-
-
-
                     </div>
                     <div className="input-group flex flex-col gap-1">
                         <label className="text-lg">Message</label>
@@ -96,7 +93,7 @@ const NotificationPage = () => {
             </section>
             <main className="notifications mt-3">
             <h1 className="text-3xl mt-2">Recent notifications</h1>
-            <main className="mt-8 px-4 overflow-auto">
+            <main className="mt-8 md:px-4 px-0 overflow-auto">
                 <table className="min-w-[700px]">
                     <thead>
                         <tr>

@@ -9,7 +9,11 @@ const DataPage = () => {
             name: "John Doe",
             age: "28",
             gender: 'Male',
-            lastOrder: 'Cappuccino',
+            lastOrder: [
+                'Cappuccino',
+                'Espresso',
+                'Latte'
+            ],
             mostBuy: 'Americano',
             rating: <Rating
                 name="read-only"
@@ -108,18 +112,18 @@ const DataPage = () => {
 
     return (
         <div className="wrapper wallet pb-8">
-            <header className="header flex flex-col gap-4">
+            <header className="header gap-4">
                 <h1 className="header-title">Data</h1>
                 <Balance />
             </header>
-            <main className="mt-8 overflow-auto flex flex-col poppins">
-                <div className="flex items-center justify-start  gap-2 mb-6">
+            <main className="md:mt-8 mt-12 overflow-auto flex flex-col poppins">
+                <div className="w-full flex lg:flex-row flex-col lg:items-center justify-start  gap-2 mb-6">
                     <div className="relative flex items-center">
                         <Search className="absolute top-1/2 transform -translate-y-1/2 left-4" size={20} color="gray" />
                         <input
-                            className="min-w-60 outline-none text-sm py-3 ps-12 pe-2 border border-gray-400 rounded-3xl" />
+                            className="md:min-w-60 max-w-36 outline-none text-sm py-3 ps-12 pe-2 border border-gray-400 rounded-3xl" />
                     </div>
-                    <div className="h-12 w-full border border-gray-400 rounded-xl flex items-center">
+                    <div className="min-w-[520px] h-12 whitespace-nowrap overflow-x-auto border w-full border-gray-400 rounded-xl flex justify-start items-center">
                         <div className="border-r flex items-center justify-center border-gray-300 h-full p-3">
                             <Filter color="gray" size={20} />
                         </div>
@@ -136,7 +140,7 @@ const DataPage = () => {
                             <RefreshCcw size={17} /> <p className="text-sm">Reset Filter</p>
                         </div>
                         <div className="flex items-center justify-center border-gray-300 h-full px-10 py-3">
-                            <p className="text-sm text-green-500 ">Export As CVS</p> 
+                            <p className="text-sm text-green-500 ">Export As CVS</p>
                         </div>
                     </div>
                 </div>
@@ -159,7 +163,17 @@ const DataPage = () => {
                                 <td>{item.name}</td>
                                 <td>{item.age}</td>
                                 <td>{item.gender}</td>
-                                <td>{item.lastOrder}</td>
+                                <td>
+                                {Array.isArray(item.lastOrder) ? (
+                                    <ul className="flex flex-col text-left">
+                                        {item.lastOrder.map((order, index) => (
+                                            <li key={index}>{order}</li>
+                                        ))}
+                                    </ul>
+                                ) : (
+                                    item.lastOrder
+                                )}
+                                </td>
                                 <td>{item.mostBuy}</td>
                                 <td>{item.rating}</td>
                                 <td>{item.overallRating}</td>
