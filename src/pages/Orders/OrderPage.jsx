@@ -55,7 +55,11 @@ const OrderPage = () => {
       comment: 'Bol buzlu olsun ',
       age: '22',
       visitCount: '2',
-      lastOrder: 'Cappuccino',
+      lastOrder: [
+        'Cappuccino',
+        'Latte',
+        'Espresso'
+      ],
       lastOrderTime: '2022-02-22',
       lastOrderRating: '3',
       totalRating: '4',
@@ -66,11 +70,11 @@ const OrderPage = () => {
 
   return (
     <div className="wrapper">
-      <header className="header flex flex-col gap-4">
+      <header className="header gap-4">
         <h1 className="header-title">Orders</h1>
         <Balance />
       </header>
-      <main className="mt-10">
+      <main className="md:mt-10 mt-16">
         {orders.map((order) => (
           <Order key={order.orderId} order={order} />
         ))}

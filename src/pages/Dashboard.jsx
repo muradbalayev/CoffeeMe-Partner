@@ -12,12 +12,25 @@ import HistoryPage from "./History/HistoryPage"
 import DataPage from "./Data/DataPage"
 import MapPage from "./Map/MapPage"
 import SupportPage from "./Support/SupportPage"
+import { useState } from "react";
+import { Menu } from "lucide-react";
+
+
 
 
 const Dashboard = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSideBar = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <div className="flex h-full overflow-hidden max-w-[1920px] mx-auto">
-      <Sidebar />
+      <Menu className="z-10 absolute top-5 left-5 cursor-pointer" size={25} color="black" onClick={toggleSideBar} />
+
+      <Sidebar isOpen={isOpen} />
       <Routes>
         <Route path='/' element={<OrderPage />} />
 

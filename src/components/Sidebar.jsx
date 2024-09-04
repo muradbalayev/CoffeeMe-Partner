@@ -1,10 +1,12 @@
-import { ChartCandlestick, FolderClosed, History, LogOut, MapPinMinusInside, MessageSquareMore, ShoppingCart,  User2 } from "lucide-react"
+import { ChartCandlestick, FolderClosed, History, LogOut, MapPinMinusInside, MessageSquareMore, ShoppingCart, User2 } from "lucide-react"
 import { NavLink, useNavigate } from "react-router-dom"
 import { FaUser } from "react-icons/fa6";
 
 
-const Sidebar = () => {
+const Sidebar = ({isOpen}) => {
     const navigate = useNavigate()
+ 
+
     const SIDEBARITEMS = [
         {
             id: 1,
@@ -48,14 +50,14 @@ const Sidebar = () => {
             icon: <MessageSquareMore size={20} />,
             path: "/dashboard/support"
         },
-        
+
     ]
 
     const handleLogout = () => {
-    navigate('/')
+        navigate('/')
     }
     return (
-        <div className="sidebar md:min-w-52 min-w-44">
+        <div className={`sidebar md:min-w-52 min-w-44 relative ${isOpen ? 'hidden' : 'flex'}`}>
             <div className="w-full flex flex-col gap-3 items-center justify-start">
                 <div className='profile-img flex bg-gray-100 rounded-full transition duration-300 p-5'>
                     <FaUser color="gray" size={55} />
@@ -64,7 +66,7 @@ const Sidebar = () => {
             </div>
             <div className="divider w-12 mx-auto bg-gray-300 h-[1px]"></div>
             <nav className="links overflow-auto mb-4">
-                {SIDEBARITEMS.map((item) => (                 
+                {SIDEBARITEMS.map((item) => (
                     <NavLink className='link text-sm' key={item.id} to={item.path} end>
                         {item.icon}
                         <p> {item.title}</p>
@@ -72,11 +74,11 @@ const Sidebar = () => {
                 ))}
             </nav>
             <div className="mt-auto mx-auto w-full flex justify-center px-5">
-            <button onClick={handleLogout}
-            className="btn text-sm border border-orange-300 ">
-            <LogOut  size={20} />
-                <p >Log Out</p>
-            </button>
+                <button onClick={handleLogout}
+                    className="btn text-sm border border-orange-300 ">
+                    <LogOut size={20} />
+                    <p >Log Out</p>
+                </button>
             </div>
         </div>
     )

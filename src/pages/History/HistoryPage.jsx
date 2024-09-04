@@ -65,11 +65,11 @@ const HistoryPage = () => {
 
     return (
         <div className="wrapper wallet pb-8">
-            <header className="header flex flex-col gap-4">
+            <header className="header gap-4">
                 <h1 className="header-title">History</h1>
                 <Balance />
             </header>
-            <main className="mt-8 overflow-auto flex flex-col poppins">
+            <main className="md:mt-8 mt-12 overflow-auto flex flex-col poppins">
                 <div className="h-12 mb-6 border border-gray-400 rounded-xl flex items-center justify-between">
                     <div className="border-r flex items-center justify-center border-gray-300 h-full p-3">
                         <Filter color="gray" size={20} />
@@ -85,6 +85,9 @@ const HistoryPage = () => {
                     </div>
                     <div className="border-r flex gap-2 items-center justify-center border-gray-300 text-red-600 h-full px-8 py-3">
                         <RefreshCcw size={17} /> <p className="text-sm">Reset Filter</p>
+                    </div>
+                    <div className="flex items-center justify-center border-gray-300 h-full px-10 py-3">
+                        <p className="text-sm text-green-500 ">Export As CVS</p>
                     </div>
                 </div>
                 <table>

@@ -119,7 +119,7 @@
 }
 
 header {
-  padding: 1rem 1rem 0 2rem;
+  padding: 1rem 1rem 0 1rem;
 }
 
 section{
@@ -128,12 +128,12 @@ section{
 }
 
 main{
-  padding: 0rem 2rem 0 2rem;
+  padding: 0rem 0.5rem 0 0.5rem;
 }
 
 .header-title {
   font-family: Poppins, "sans-serif";
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -250,7 +250,6 @@ table th:last-child {
     flex-direction: column;
     padding-left: 40px;
     gap: 10px;
-    width: 50%;
   }
 
   .order-details__right {
@@ -258,7 +257,6 @@ table th:last-child {
     padding: 0px 0px 0px 40px;
     flex-direction: column;
     gap: 10px;
-    width: 50%;
   }
 
   .order-info {
@@ -311,10 +309,16 @@ table th:last-child {
   
 }
 
+
+//Sales
+.total-card{
+  background-color: var(--card-bg);
+}
+
 // Wallet page
 .wallet{
 
-  a{
+  .withdraw-btn{
     background-color: var(--bg-color);
   }
 }
@@ -336,8 +340,18 @@ table th:last-child {
   }
 }
 
-@media (min-width: 1024) {
-  .wrapper {
-    padding: 2rem 3rem 6rem 3rem;
+@media (min-width: 1024px) {
+ 
+  main{
+      padding: 0rem 2rem 0 2rem;
+  }
+
+}
+@media (min-width: 768px) {
+  .header-title{
+    font-size: 2.5rem;
   }
 }
+
+
+
