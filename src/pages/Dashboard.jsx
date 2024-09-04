@@ -34,7 +34,7 @@ const Dashboard = () => {
 
       <Menu
         ref={menuButtonRef}
-        className="mobile-nav bg-gray-400 rounded-xl  p-2 z-40 sm:hidden block absolute top-5 right-5 cursor-pointer"
+        className="menu-btn bg-green-800 rounded-xl  p-2 z-40 sm:hidden block absolute top-5 right-5 cursor-pointer"
         size={40}
         color="white"
         onClick={() => setIsMobileOpen(!isMobileOpen)}

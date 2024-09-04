@@ -70,7 +70,7 @@ const HistoryPage = () => {
                 <Balance />
             </header>
             <main className="md:mt-8 mt-12 overflow-auto flex flex-col poppins">
-                <div className="min-w-[520px] overflow-y-hidden whitespace-nowrap overflow-x-auto min-h-12 mb-6 border border-gray-400 rounded-xl flex items-center justify-between">
+                <div className="min-w-[750px] whitespace-wrap min-h-12 mb-6 border border-gray-400 rounded-xl flex items-center justify-between">
                     <div className="border-r flex items-center justify-center border-gray-300 h-full p-3">
                         <Filter color="gray" size={20} />
                     </div>
@@ -90,7 +90,7 @@ const HistoryPage = () => {
                         <p className="text-sm text-green-500 ">Export As CVS</p>
                     </div>
                 </div>
-                <table>
+                <table className="min-w-[750px]">
                     <thead>
                         <tr>
                             <th>ID</th>

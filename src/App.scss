@@ -114,6 +114,14 @@ main{
   border-bottom-right-radius: 0px;
 }
 
+.menu-btn{
+  transition: .3s ease;
+
+  &:hover{
+    background-color: rgba(255, 166, 0, 0.713);
+   }
+}
+
 .btn {
   width: 100%;
   display: flex;

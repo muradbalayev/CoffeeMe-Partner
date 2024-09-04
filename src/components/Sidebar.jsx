@@ -120,7 +120,6 @@ const Sidebar = ({  isMobileOpen, setIsMobileOpen, menuButtonRef }) => {
                     </button>
                 </div>
             </div>
-            {/* <div className='overlay z-10 absolute bg-gray-300 w-full h-full '> */}
                 <div
                     ref={mobileSidebarRef}
                     className={`mobile-sidebar text-white w-[80%] z-10 opacity-100 sm:hidden items-center justify-start fixed ${isMobileOpen ? "left-0" : "-left-full"
@@ -156,7 +155,6 @@ const Sidebar = ({  isMobileOpen, setIsMobileOpen, menuButtonRef }) => {
                         </button>
                     </div>
                 </div>
-            {/* </div> */}
         </>
     );
 };
