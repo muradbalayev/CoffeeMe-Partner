@@ -85,7 +85,6 @@ const WalletPage = () => {
                         <table>
                             <thead>
                                 <tr>
-                                    <th>ID</th>
                                     <th>Name</th>
                                     <th>Date</th>
                                     <th>Price</th>
@@ -95,7 +94,6 @@ const WalletPage = () => {
                             <tbody>
                                 {data.map((item) => (
                                     <tr key={item.id}>
-                                        <td>{item.id}</td>
                                         <td>{item.name}</td>
                                         <td>{item.price}</td>
                                         <td>{item.date}</td>

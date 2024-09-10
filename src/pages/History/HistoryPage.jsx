@@ -93,7 +93,6 @@ const HistoryPage = () => {
                 <table className="min-w-[750px]">
                     <thead>
                         <tr>
-                            <th>ID</th>
                             <th>Name, Surname</th>
                             <th>Product</th>
                             <th>Date</th>
@@ -103,7 +102,6 @@ const HistoryPage = () => {
                     <tbody>
                         {data.map((item) => (
                             <tr key={item.id}>
-                                <td>{item.id}</td>
                                 <td>{item.name}</td>
                                 <td>{item.product}</td>
                                 <td>{item.date}</td>

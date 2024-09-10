@@ -202,10 +202,11 @@ table td {
   padding: 15px;
   text-align: center;
   position: relative;
-
-  &:not(:first-child) {
   min-width: 150px;
-  }
+
+  // &:not(:first-child) {
+  // min-width: 150px;
+  // }
 }
 
 table th::after,
