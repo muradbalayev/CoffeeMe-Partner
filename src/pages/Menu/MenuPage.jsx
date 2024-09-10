@@ -1,5 +1,6 @@
 import { Search } from "lucide-react";
 import Balance from "../../components/Balance";
+import { Button } from "@mui/material";
 
 
 const MenuPage = () => {
@@ -10,7 +11,9 @@ const MenuPage = () => {
             category: 'Drink',
             price: "695",
             size: "636",
-            type: 'Takeaway'
+            type: 'Takeaway',
+            status: "true",
+            pending: 'false'
         },
         {
             id: 2,
@@ -18,7 +21,9 @@ const MenuPage = () => {
             category: 'Drink',
             price: "675",
             size: "636",
-            type: 'Takeaway'
+            type: 'Takeaway',
+            status: "false",
+            pending: 'false'
 
         },
         {
@@ -27,7 +32,9 @@ const MenuPage = () => {
             category: 'Drink',
             price: "367",
             size: "636",
-            type: 'Takeaway'
+            type: 'Takeaway',
+            status: "true",
+            pending: 'true'
 
         }
     ]
@@ -36,7 +43,7 @@ const MenuPage = () => {
         <div className="wrapper">
             <header className="header gap-4">
                 <h1 className="header-title">Menu</h1>
-                <Balance/>
+                <Balance />
                 <div className="relative flex items-center mmd:mt-4 mt-12">
                     <Search className="absolute top-1/2 transform -translate-y-1/2 left-4" size={20} color="gray" />
                     <input
@@ -54,21 +61,41 @@ const MenuPage = () => {
                             <th>Price</th>
                             <th>Size</th>
                             <th>Type</th>
+                            <th>Status</th>
                             <th>Stock</th>
                         </tr>
                     </thead>
                     <tbody>
                         {data.map((item) => (
                             <tr key={item.id}>
-                                <td><img  className="mx-auto rounded-lg" src="https://via.placeholder.com/50" alt="Product" /></td>
+                                <td><img className="mx-auto rounded-lg" src="https://via.placeholder.com/50" alt="Product" /></td>
                                 <td>{item.name}</td>
                                 <td>{item.category}</td>
                                 <td>{item.price}</td>
                                 <td>{item.size}</td>
                                 <td>{item.type}</td>
                                 <td className="text-green-500">
-                                    <input type="checkbox" />
-                                </td>
+                                    <div className={`relative py-2  rounded-lg shadow-lg backdrop-blur-sm bg-white/30 border ${item.status === 'true' ? 'border-green-600' : 'border-red-600'}`}>
+                                        <p
+                                            className={`text-sm transition-all duration-300 ${item.status === 'true' ? 'text-green-600' : 'text-red-600'
+                                                }`}
+                                        >
+                                            {item.status === 'true' ? 'In Stock' : 'Out of Stock'}
+                                        </p>
+                                        {item.status === 'true' && (
+                                            <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-600 rounded-full animate-pulse" />
+                                        )}
+                                    </div>                                </td>
+                                {
+                                    item.pending === "true" ?
+                                        <td>
+                                            <Button size="small" variant="contained" color="warning">Pending</Button>
+                                        </td>
+                                        :
+                                        <td className="text-green-500">
+                                            {item.status === 'true' ? <Button size="small" variant="contained" color="error">Out of Stock</Button> : <Button size="small" variant="contained" color="success">In Stock</Button>}
+                                        </td>
+                                }
                             </tr>
                         ))}
                     </tbody>
