@@ -1,11 +1,11 @@
 
 const SalesTable = () => {
     const userData = [
-        { id: 1, name: "John Doe", sales: 20 },
-        { id: 2, name: "John Doe", sales: 20 },
-        { id: 3, name: "John Doe", sales: 20 },
-        { id: 4, name: "John Doe", sales: 20 },
-        { id: 5, name: "John Doe", sales: 20 }
+        { id: 1, name: "Murad Balayev", sales: 23 },
+        { id: 2, name: "Ali Aghayev", sales: 22 },
+        { id: 3, name: "Mirsaleh Aliyev", sales: 20 },
+        { id: 4, name: "Camal Cemilov", sales: 16 },
+        { id: 5, name: "Kamal Abdullayev", sales: 14 }
     ]
 
     return (

@@ -5,7 +5,7 @@ const NotificationPage = () => {
     const data = [
         {
             id: 1,
-            title: "John Doe",
+            title: "Murad Balayev",
             category: 25,
             message: "Male",
             date: "12.04.2024",
@@ -14,16 +14,16 @@ const NotificationPage = () => {
         },
         {
             id: 2,
-            title: "Jane Doe",
+            title: "Ali Aghayev",
             category: 30,
-            message: "Female",
+            message: "Male",
             date: "12.04.2024",
             status: "Pending"
 
         },
         {
             id: 3,
-            title: "Bob Smith",
+            title: "Mirsaleh Aliyev",
             category: 35,
             message: "Male",
             date: "12.04.2024",
@@ -31,7 +31,7 @@ const NotificationPage = () => {
         },
         {
             id: 3,
-            title: "Bob Smith",
+            title: "Camal Cemilov",
             category: 35,
             message: "Male",
             date: "12.04.2024",
@@ -39,7 +39,7 @@ const NotificationPage = () => {
         },
         {
             id: 4,
-            title: "Bob Smith",
+            title: "Kamal Abdullayev",
             category: 35,
             message: "Male",
             date: "12.04.2024",
@@ -47,9 +47,9 @@ const NotificationPage = () => {
         },
         {
             id: 5,
-            title: "Bob Smith",
+            title: "Anna Smith",
             category: 35,
-            message: "Male",
+            message: "Female",
             date: "12.04.2024",
             status: "Pending"
         }

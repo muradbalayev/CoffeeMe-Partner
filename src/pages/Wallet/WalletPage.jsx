@@ -5,7 +5,7 @@ const WalletPage = () => {
     const data = [
         {
             id: 1,
-            name: "John Doe",
+            name: "Murad Balayev",
             price: "25",
             date: "12.04.2024",
             status: "Pending"
@@ -13,7 +13,7 @@ const WalletPage = () => {
         },
         {
             id: 2,
-            name: "Jane Doe",
+            name: "Ali Aghayev",
             price: "18",
             date: "12.04.2024",
             status: "Pending"
@@ -21,28 +21,28 @@ const WalletPage = () => {
         },
         {
             id: 3,
-            name: "Bob Smith",
+            name: "Mirsaleh Aliyev",
             price: "25",
             date: "12.04.2024",
             status: "Pending"
         },
         {
             id: 3,
-            name: "Bob Smith",
+            name: "Camal Cemilov",
             price: "20",
             date: "12.04.2024",
             status: "Pending"
         },
         {
             id: 4,
-            name: "Bob Smith",
+            name: "Kamal Abdullayev",
             price: "30",
             date: "12.04.2024",
             status: "Pending"
         },
         {
             id: 5,
-            name: "Bob Smith",
+            name: "Kenan Ahmedzade",
             price: "40",
             date: "12.04.2024",
             status: "Pending"
@@ -94,7 +94,7 @@ const WalletPage = () => {
                             <tbody>
                                 {data.map((item) => (
                                     <tr key={item.id}>
-                                        <td>{item.name}</td>
+                                        <td className='whitespace-nowrap'>{item.name}</td>
                                         <td>{item.price}</td>
                                         <td>{item.date}</td>
                                         <td>{item.status}</td>

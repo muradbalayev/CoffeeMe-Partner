@@ -6,7 +6,7 @@ const HistoryPage = () => {
     const data = [
         {
             id: 1,
-            name: "John Doe",
+            name: "Murad Balayev",
             product: "Limonade",
             date: "12.04.2024",
             rating: <Rating
@@ -18,7 +18,7 @@ const HistoryPage = () => {
         },
         {
             id: 2,
-            name: "Jane Doe",
+            name: "Ali Aghayev",
             product: "Cookie",
             date: "12.04.2024",
             rating: <Rating
@@ -30,7 +30,7 @@ const HistoryPage = () => {
         },
         {
             id: 3,
-            name: "Bob Smith",
+            name: "Mirsaleh Aliyev",
             product: "Cookie",
             date: "12.04.2024",
             rating: <Rating
@@ -41,7 +41,7 @@ const HistoryPage = () => {
         },
         {
             id: 4,
-            name: "Bob Smith",
+            name: "Cemil Sadiqov",
             product: "Milkshake",
             date: "12.04.2024",
             rating: <Rating
@@ -52,7 +52,7 @@ const HistoryPage = () => {
         },
         {
             id: 5,
-            name: "Bob Smith",
+            name: "Kamal Abdullayev",
             product: "Coffee",
             date: "12.04.2024",
             rating: <Rating

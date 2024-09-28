@@ -7,20 +7,20 @@ const MenuPage = () => {
     const data = [
         {
             id: 1,
-            name: "John Doe",
+            name: "Cappuchino",
             category: 'Drink',
-            price: "695",
-            size: "636",
-            type: 'Takeaway',
+            price: "5",
+            size: "L",
+            type: 'Cup',
             status: "true",
             pending: 'false'
         },
         {
             id: 2,
-            name: "Jane Doe",
-            category: 'Drink',
-            price: "675",
-            size: "636",
+            name: "Cookie",
+            category: 'Cookie',
+            price: "4",
+            size: "M",
             type: 'Takeaway',
             status: "false",
             pending: 'false'
@@ -28,10 +28,10 @@ const MenuPage = () => {
         },
         {
             id: 3,
-            name: "Bob Smith",
+            name: "Strawberry Milkshake",
             category: 'Drink',
-            price: "367",
-            size: "636",
+            price: "4",
+            size: "S",
             type: 'Takeaway',
             status: "true",
             pending: 'true'
@@ -69,9 +69,9 @@ const MenuPage = () => {
                         {data.map((item) => (
                             <tr key={item.id}>
                                 <td><img className="mx-auto rounded-lg" src="https://via.placeholder.com/50" alt="Product" /></td>
-                                <td>{item.name}</td>
+                                <td className="whitespace-nowrap">{item.name}</td>
                                 <td>{item.category}</td>
-                                <td>{item.price}</td>
+                                <td>{item.price} ₼</td>
                                 <td>{item.size}</td>
                                 <td>{item.type}</td>
                                 <td className="text-green-500">

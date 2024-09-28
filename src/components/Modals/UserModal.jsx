@@ -1,22 +1,41 @@
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
-
 import { Avatar } from "@mui/material";
+import { FiUser } from "react-icons/fi";
 
 const UserModal = ({ isOpen, onClose, user }) => {
-
+  console.log(user.photo)
   return (
     <Modal open={isOpen} onClose={onClose} center>
-      <div className="md:p-12 sm:p-8 p-4 bg-gradient-to-br from-[#f3f4f50f] to-[#54be9539]">
-        <div className="flex flex-col gap-2 text-center my-3 md:mb-0">
-          <h1 className="poppins md:text-3xl text-2xl">User information</h1>
-          <div className="mt-4 w-full overflow-auto flex flex-col items-center justify-center">
-            <Avatar alt="Remy Sharp" src={user.image} sx={{ width: 100, height: 100 }} />
-            <p className="text-xl mt-3 font-bold"> {user.name} </p>
-            <div className="poppins shadow-md w-full mt-10 flex flex-col items-start font-semibold justify-center gap-2 my-2 bg-[#d0cfcf] rounded-lg px-4 py-2">
-            <p>Age: {user.age}</p>
-            <p>Gender: {user.gender}</p>
-            
+      <div className="bg-white sm:min-w-[500px] rounded-3xl shadow-2xl md:p-12 sm:p-10 p-8 max-w-md mx-auto">
+        <div className="flex flex-col items-center text-center gap-6">
+          <h1 className="poppins text-3xl font-bold text-gray-800">
+            User Information
+          </h1>
+          <div className="relative">
+            <Avatar
+              alt={user.name}
+              src={user.photo} // Fallback URL if photo is missing
+              sx={{
+                width: 140,
+                height: 140,
+                boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)",
+                border: "4px solid white",
+              }}
+            />
+            <div className="absolute bottom-0 right-0 bg-green-500 p-2 rounded-full border-2 border-white">
+              <FiUser className="text-white text-xl" />
+            </div>
+          </div>
+          <p className="text-2xl font-semibold mt-2 text-gray-700">{user.name}</p>
+          <div className="w-full bg-gradient-to-br from-[#e4e7ec] to-[#f8fafc] shadow-inner p-6 rounded-xl flex flex-col items-start gap-4 border border-gray-300">
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-semibold text-gray-600">Age:</span>
+              <span className="text-lg text-gray-900">{user.age}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-semibold text-gray-600">Gender:</span>
+              <span className="text-lg text-gray-900">{user.gender}</span>
             </div>
           </div>
         </div>

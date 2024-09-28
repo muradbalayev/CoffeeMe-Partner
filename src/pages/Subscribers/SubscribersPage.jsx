@@ -6,21 +6,21 @@ const SubscribersPage = () => {
     const data = [
         {
             id: 1,
-            name: "John Doe",
+            name: "Murad Balayev",
             age: 25,
             gender: "Male",
             favorite: "Bench Press"
         },
         {
             id: 2,
-            name: "Jane Doe",
+            name: "Ali Aghayev",
             age: 30,
-            gender: "Female",
+            gender: "Male",
             favorite: "Bench Press"
         },
         {
             id: 3,
-            name: "Bob Smith",
+            name: "Mirsaleh Aliyev",
             age: 35,
             gender: "Male",
             favorite: "Bench Press"

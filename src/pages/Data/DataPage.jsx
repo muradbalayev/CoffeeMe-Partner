@@ -6,7 +6,7 @@ const DataPage = () => {
     const data = [
         {
             id: 1,
-            name: "John Doe",
+            name: "Murad Balayev",
             age: "28",
             gender: 'Male',
             lastOrder: [
@@ -25,14 +25,14 @@ const DataPage = () => {
                 value={4}
                 readOnly
             />,
-            most: 'Gloria Jeans'
+            most: 'Coffee Shop'
 
         },
         {
             id: 2,
-            name: "Jane Doe",
+            name: "Ali Aghayev",
             age: "25",
-            gender: "Female",
+            gender: "Male",
             lastOrder: 'Cappuccino',
             mostBuy: 'Americano',
             rating: <Rating
@@ -45,12 +45,12 @@ const DataPage = () => {
                 value={4}
                 readOnly
             />,
-            most: 'Gloria Jeans'
+            most: 'Coffee Shop'
 
         },
         {
             id: 3,
-            name: "Bob Smith",
+            name: "Mirsaleh Aliyev",
             age: "25",
             gender: 'Male',
             lastOrder: 'Cappuccino',
@@ -65,12 +65,12 @@ const DataPage = () => {
                 value={4}
                 readOnly
             />,
-            most: 'Gloria Jeans'
+            most: 'Coffee Shop'
 
         },
         {
             id: 4,
-            name: "Bob Smith",
+            name: "Camal Cemilov",
             age: "20",
             gender: 'Male',
             lastOrder: 'Cappuccino',
@@ -85,12 +85,12 @@ const DataPage = () => {
                 value={4}
                 readOnly
             />,
-            most: 'Gloria Jeans'
+            most: 'Coffee Shop'
 
         },
         {
             id: 5,
-            name: "Bob Smith",
+            name: "Kamal Abdullayev",
             age: "19",
             gender: 'Male',
             lastOrder: 'Cappuccino',
@@ -105,7 +105,7 @@ const DataPage = () => {
                 value={4}
                 readOnly
             />,
-            most: 'Gloria Jeans'
+            most: 'Coffee Shop'
 
         }
     ]
@@ -160,12 +160,12 @@ const DataPage = () => {
                     <tbody>
                         {data.map((item) => (
                             <tr key={item.id}>
-                                <td>{item.name}</td>
+                                <td className="whitespace-nowrap">{item.name}</td>
                                 <td>{item.age}</td>
                                 <td>{item.gender}</td>
                                 <td>
                                 {Array.isArray(item.lastOrder) ? (
-                                    <ul className="flex flex-col text-left">
+                                    <ul className="flex flex-col text-center">
                                         {item.lastOrder.map((order, index) => (
                                             <li key={index}>{order}</li>
                                         ))}
