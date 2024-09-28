@@ -7,7 +7,7 @@ const OrderPage = () => {
   const orders = [
     {
       orderId: 1,
-      customerName: "Emin Baghirov",
+      customerName: "Mirsaleh Aliyev",
       customerId: "12830904",
       number: "1",
       coffee: "Americano",
