@@ -39,7 +39,7 @@ const LoginPage = () => {
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                             required
-                            className="p-2 w-full outline-none text-sm rounded-lg bg-transparent border" placeholder="Enter username" />
+                            className="p-2 w-full outline-none text-base rounded-lg bg-transparent border" placeholder="Enter username" />
                     </div>
                     <div className="flex flex-col gap-1 mt-3 w-80">
                         <label className="text-gray-600 ms-1 text-sm">Password</label>
@@ -49,7 +49,7 @@ const LoginPage = () => {
                                 onChange={(e) => setPassword(e.target.value)}
                                 type={type ? "text" : "password"}
                                 required
-                                className="p-2 w-full outline-none text-sm rounded-lg bg-transparent border " placeholder="Enter password" />
+                                className="p-2 w-full outline-none text-base rounded-lg bg-transparent border " placeholder="Enter password" />
 
                             <span className='eye_icon absolute' onClick={() => setType(!type)}>
                                 {type ? <Eye size={20} /> : <EyeOff size={20} />}
