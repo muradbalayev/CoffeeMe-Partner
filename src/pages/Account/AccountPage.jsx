@@ -12,7 +12,7 @@ const AccountPage = () => {
         <h1 className="header-title">Account</h1>
         <Balance />
       </header>
-      <main className="relative flex items-center justify-center h-full w-full overflow-auto">
+      <main className="relative flex items-center justify-center sm:mt-0 mt-10 h-full w-full overflow-auto">
         <div className="menu lg:w-[600px] md:w-[450px] w-[400px] grid grid-cols-2 sm:gap-6 gap-3">
           <Link
             to={"/dashboard/menu"}
