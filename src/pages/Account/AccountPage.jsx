@@ -13,14 +13,14 @@ const AccountPage = () => {
         <Balance />
       </header>
       <main className="relative flex items-center justify-center h-full w-full overflow-auto">
-        <div className="menu lg:w-[600px] md:w-[450px] w-[300px] grid grid-cols-2 gap-6">
+        <div className="menu lg:w-[600px] md:w-[450px] w-[400px] grid grid-cols-2 gap-6">
           <Link
             to={"/dashboard/menu"}
             className="group relative flex flex-col items-center justify-center p-6 rounded-2xl bg-gray-100 shadow-xl hover:shadow-lg transform hover:scale-105 transition-all duration-500 ease-in-out"
           >
             <AiFillAppstore
               size={60}
-              className="text-gray-700 transform group-hover:rotate-12 transition-transform duration-500 ease-in-out"
+              className="text-gray-700 transform group-hover:rotate-12 group-hover:text-green-800 group-hover:scale-105 transition-all duration-500 ease-in-out"
             />
             <h1 className="mt-4 text-gray-800 poppins md:text-2xl text-xl  transition-opacity duration-300">
               Menu
@@ -32,7 +32,7 @@ const AccountPage = () => {
           >
             <HiMiniUsers
               size={60}
-              className="text-gray-700 transform group-hover:rotate-12 transition-transform duration-500 ease-in-out"
+              className="text-gray-700 transform group-hover:-rotate-12 group-hover:text-green-800 transition-all duration-500 ease-in-out"
             />
             <h1 className="mt-4 text-gray-800 poppins md:text-2xl text-xl  transition-opacity duration-300">
               Subscribers
@@ -44,7 +44,7 @@ const AccountPage = () => {
           >
             <FaWallet
               size={60}
-              className="text-gray-700 transform group-hover:rotate-12 transition-transform duration-500 ease-in-out"
+              className="text-gray-700 transform group-hover:rotate-12 group-hover:text-green-800 transition-all duration-500 ease-in-out"
             />
             <h1 className="mt-4 text-gray-800 poppins md:text-2xl text-xl transition-opacity duration-300">
               Wallet
@@ -56,7 +56,7 @@ const AccountPage = () => {
           >
             <BiSolidBellRing
               size={60}
-              className="text-gray-700 transform group-hover:rotate-12 transition-transform duration-500 ease-in-out"
+              className="text-gray-700 transform group-hover:-rotate-12 group-hover:text-green-800 transition-all duration-500 ease-in-out"
             />
             <h1 className="mt-4 text-gray-800 poppins md:text-2xl text-xl   transition-opacity duration-300">
               Notifications
