@@ -14,7 +14,7 @@ const OrderDetailsLeft = ({ order }) => {
       gsap.to("#order", {
         opacity: 0,
         y: 50, 
-        duration: 0.5,
+        duration: 0.6,
         ease: 'power3.inOut',
         onComplete: () => {
           setSelectedOrderIndex(index);
