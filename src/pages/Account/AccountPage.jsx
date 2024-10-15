@@ -13,7 +13,7 @@ const AccountPage = () => {
         <Balance />
       </header>
       <main className="relative flex items-center justify-center h-full w-full overflow-auto">
-        <div className="menu lg:w-[600px] md:w-[450px] w-[400px] grid grid-cols-2 gap-6">
+        <div className="menu lg:w-[600px] md:w-[450px] w-[400px] grid grid-cols-2 sm:gap-6 gap-3">
           <Link
             to={"/dashboard/menu"}
             className="group relative flex flex-col items-center justify-center p-6 rounded-2xl bg-gray-100 shadow-xl hover:shadow-lg transform hover:scale-105 transition-all duration-500 ease-in-out"
